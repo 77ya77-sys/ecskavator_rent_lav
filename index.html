@@ -1,26 +1,413 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЭКСКАПРОКАТ — Аренда экскаваторов без посредников</title>
+  <meta name="description" content="Аренда экскаваторов в Москве и области. Подача за 2 часа. Работаем с 2010 года." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main>
+    <!-- Hero -->
+    <section class="hero hero-gradient">
+      <div class="hero-bg" style="position: absolute; inset: 0;">
+        <img src="assets/hero-excavator.jpg" alt="Экскаватор на стройплощадке" />
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-bg-overlay-2"></div>
+      </div>
+      <div class="hero-glow" style="background: var(--gradient-glow);"></div>
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+      <div class="container hero-content">
+        <div class="hero-topbar animate-slide-up">
+          <a href="tel:+78001234567" class="flex items-center gap-2" style="display: flex; align-items: center; gap: 0.5rem;">
+            <svg class="icon text-primary" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>8 (800) 123-45-67</span>
+          </a>
+          <div class="flex items-center gap-2" style="display: flex; align-items: center; gap: 0.5rem;">
+            <svg class="icon text-primary" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Круглосуточно</span>
+          </div>
+          <div class="flex items-center gap-2" style="display: flex; align-items: center; gap: 0.5rem;">
+            <svg class="icon text-primary" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Москва и область</span>
+          </div>
+        </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+        <div class="animate-slide-up" style="max-width: 48rem;">
+          <div class="hero-badge">
+            <svg class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Гарантия качества техники</span>
+          </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+          <h1 class="hero-title">
+            Аренда <span class="text-gradient">экскаваторов</span><br />
+            без посредников
+          </h1>
+
+          <p class="hero-lead">
+            Подача техники за <strong class="text-foreground">2 часа</strong>. Работаем с крупнейшими застройщиками Москвы с 2010 года.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-hero btn-xl">Заказать экскаватор</a>
+            <a href="#catalog" class="btn btn-hero-outline btn-xl">Смотреть каталог</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="text-center md-text-left">
+              <div class="hero-stat-value text-gradient">150+</div>
+              <div class="hero-stat-label">Единиц техники</div>
+            </div>
+            <div class="text-center md-text-left">
+              <div class="hero-stat-value text-gradient">14</div>
+              <div class="hero-stat-label">Лет на рынке</div>
+            </div>
+            <div class="text-center md-text-left">
+              <div class="hero-stat-value text-gradient">2ч</div>
+              <div class="hero-stat-label">Подача техники</div>
+            </div>
+            <div class="text-center md-text-left">
+              <div class="hero-stat-value text-gradient">24/7</div>
+              <div class="hero-stat-label">Поддержка</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Листайте</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Catalog -->
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <div class="catalog-header animate-slide-up">
+          <span class="section-label">Каталог техники</span>
+          <h2 class="section-title">Выберите <span class="text-gradient">экскаватор</span></h2>
+          <p class="section-desc">Вся техника проходит ежедневный осмотр и полное техобслуживание</p>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="card">
+            <div class="card-badge">Популярный</div>
+            <div class="card-image">
+              <img src="assets/excavator-1.jpg" alt="Гусеничный экскаватор CAT 320" />
+              <div class="card-image-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-model">CAT 320</div>
+              <h3 class="card-name">Гусеничный экскаватор</h3>
+              <div class="card-specs">
+                <div class="card-spec">
+                  <div class="card-spec-label">Масса</div>
+                  <div class="card-spec-value">20 тонн</div>
+                </div>
+                <div class="card-spec">
+                  <div class="card-spec-label">Ковш</div>
+                  <div class="card-spec-value">1.2 м³</div>
+                </div>
+                <div class="card-spec">
+                  <div class="card-spec-label">Глубина</div>
+                  <div class="card-spec-value">6.7 м</div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="card-price text-gradient">от 15 000 ₽/смена</span>
+                <a href="#contact" class="btn btn-hero btn-sm">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img src="assets/excavator-2.jpg" alt="Мини-экскаватор Kubota KX080" />
+              <div class="card-image-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-model">Kubota KX080</div>
+              <h3 class="card-name">Мини-экскаватор</h3>
+              <div class="card-specs">
+                <div class="card-spec">
+                  <div class="card-spec-label">Масса</div>
+                  <div class="card-spec-value">8 тонн</div>
+                </div>
+                <div class="card-spec">
+                  <div class="card-spec-label">Ковш</div>
+                  <div class="card-spec-value">0.3 м³</div>
+                </div>
+                <div class="card-spec">
+                  <div class="card-spec-label">Глубина</div>
+                  <div class="card-spec-value">4.2 м</div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="card-price text-gradient">от 8 000 ₽/смена</span>
+                <a href="#contact" class="btn btn-hero btn-sm">Заказать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img src="assets/excavator-3.jpg" alt="Тяжёлый экскаватор Hitachi ZX350" />
+              <div class="card-image-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-model">Hitachi ZX350</div>
+              <h3 class="card-name">Тяжёлый экскаватор</h3>
+              <div class="card-specs">
+                <div class="card-spec">
+                  <div class="card-spec-label">Масса</div>
+                  <div class="card-spec-value">35 тонн</div>
+                </div>
+                <div class="card-spec">
+                  <div class="card-spec-label">Ковш</div>
+                  <div class="card-spec-value">1.8 м³</div>
+                </div>
+                <div class="card-spec">
+                  <div class="card-spec-label">Глубина</div>
+                  <div class="card-spec-value">7.5 м</div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span class="card-price text-gradient">от 25 000 ₽/смена</span>
+                <a href="#contact" class="btn btn-hero btn-sm">Заказать</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="catalog-more">
+          <a href="#contact" class="btn btn-outline btn-lg">Смотреть весь каталог →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <div class="features-header">
+          <span class="section-label">Почему выбирают нас</span>
+          <h2 class="section-title">Работаем <span class="text-gradient">надёжно</span></h2>
+          <p class="section-desc">14 лет на рынке аренды спецтехники. Нам доверяют крупнейшие застройщики</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="feature-title">Подача за 2 часа</h3>
+            <p class="feature-desc">Экстренная доставка техники в любую точку Москвы и области</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="feature-title">Техника в идеале</h3>
+            <p class="feature-desc">Ежедневное ТО и проверка всего парка перед выездом</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h2"/><path d="M19 18h2c.6 0 1-.4 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><path d="M14 18H9"/><path d="M14 18V8h3.52a1 1 0 0 1 .78.375l3.48 4.35a1 1 0 0 1 .22.624V17"/><path d="M14 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v11"/></svg>
+            </div>
+            <h3 class="feature-title">Своя доставка</h3>
+            <p class="feature-desc">Тралы и низкорамники в собственности — без посредников</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="feature-title">Полное КАСКО</h3>
+            <p class="feature-desc">Вся техника застрахована — вы ни за что не отвечаете</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <h3 class="feature-title">Гибкая оплата</h3>
+            <p class="feature-desc">Безнал, карты, рассрочка для постоянных клиентов</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </div>
+            <h3 class="feature-title">Поддержка 24/7</h3>
+            <p class="feature-desc">Диспетчер и механик на связи круглосуточно</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="contact-glow"></div>
+      <div class="container contact-inner">
+        <div class="contact-grid">
+          <div>
+            <span class="section-label">Связаться с нами</span>
+            <h2 class="section-title">
+              Оставьте заявку —<br />
+              <span class="text-gradient">перезвоним за 5 минут</span>
+            </h2>
+            <p class="text-muted-foreground" style="font-size: 1.125rem; margin-bottom: 2.5rem; line-height: 1.6;">
+              Расскажите о вашей задаче, и мы подберём оптимальную технику. Консультация и выезд на объект — бесплатно.
+            </p>
+
+            <div class="contact-links">
+              <a href="tel:+78001234567" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-link-label">Бесплатный звонок</div>
+                  <div class="contact-link-value">8 (800) 123-45-67</div>
+                </div>
+              </a>
+              <a href="https://wa.me/79001234567" class="contact-link" target="_blank" rel="noopener">
+                <div class="contact-link-icon success-bg">
+                  <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-link-label">WhatsApp</div>
+                  <div class="contact-link-value">+7 (900) 123-45-67</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <div id="contact-success" class="contact-success hidden">
+              <div class="contact-success-icon">
+                <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h3>Заявка отправлена!</h3>
+              <p>Перезвоним в течение 5 минут</p>
+            </div>
+            <form id="contact-form" class="contact-form" action="#" method="post">
+              <div class="form-group">
+                <label class="form-label" for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Как к вам обращаться?" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Телефон</label>
+                <div style="position: relative;">
+                  <span style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); font-weight: 500; pointer-events: none;">+7</span>
+                  <input type="tel" id="phone" name="phone" class="form-input with-prefix" placeholder="(900) 123-45-67" inputmode="numeric" autocomplete="tel-national" required maxlength="18" />
+                </div>
+                <p id="phone-error" class="form-error hidden">Введите 10 цифр номера</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Сообщение (опционально)</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Опишите вашу задачу или укажите нужную технику"></textarea>
+              </div>
+              <button type="submit" class="btn btn-hero btn-xl btn-full" id="submit-btn" disabled>Отправить заявку</button>
+              <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><span class="text-gradient">ЭКСКА</span>ПРОКАТ</div>
+          <p class="footer-desc">Аренда строительной спецтехники в Москве и Московской области. Работаем с 2010 года. Парк из 150+ единиц техники.</p>
+          <div class="footer-social">
+            <a href="#">VK</a>
+            <a href="#">TG</a>
+            <a href="#">YT</a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#catalog">Каталог техники</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Наши работы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h4>Контакты</h4>
+          <ul>
+            <li><span class="icon-wrap"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span>Москва, ул. Строителей, д. 15</span></li>
+            <li><span class="icon-wrap"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><a href="tel:+78001234567">8 (800) 123-45-67</a></li>
+            <li><span class="icon-wrap"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span><a href="mailto:info@exkaprokat.ru">info@exkaprokat.ru</a></li>
+            <li><span class="icon-wrap"><svg class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span>Круглосуточно, 24/7</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2024 ЭКСКАПРОКАТ. Все права защищены.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Договор оферты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var form = document.getElementById('contact-form');
+      var successEl = document.getElementById('contact-success');
+      var formWrap = form.parentElement;
+      var phoneInput = document.getElementById('phone');
+      var phoneError = document.getElementById('phone-error');
+      var submitBtn = document.getElementById('submit-btn');
+
+      function formatPhone(val) {
+        var digits = val.replace(/\D/g, '');
+        if (digits.length === 11 && (digits[0] === '7' || digits[0] === '8')) digits = digits.slice(1);
+        digits = digits.slice(0, 10);
+        if (digits.length === 0) return '';
+        if (digits.length <= 3) return '(' + digits;
+        if (digits.length <= 6) return '(' + digits.slice(0, 3) + ') ' + digits.slice(3);
+        if (digits.length <= 8) return '(' + digits.slice(0, 3) + ') ' + digits.slice(3, 6) + '-' + digits.slice(6);
+        return '(' + digits.slice(0, 3) + ') ' + digits.slice(3, 6) + '-' + digits.slice(6, 8) + '-' + digits.slice(8);
+      }
+
+      function digitsOnly(str) { return str.replace(/\D/g, '').slice(0, 10); }
+
+      if (phoneInput) {
+        phoneInput.addEventListener('input', function() {
+          phoneInput.value = formatPhone(phoneInput.value);
+          var len = digitsOnly(phoneInput.value).length;
+          phoneError.classList.toggle('hidden', len === 0 || len === 10);
+          submitBtn.disabled = len !== 10;
+        });
+        phoneInput.addEventListener('paste', function(e) {
+          e.preventDefault();
+          phoneInput.value = formatPhone(e.clipboardData.getData('text'));
+        });
+      }
+
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          if (digitsOnly(phoneInput.value).length !== 10) return;
+          form.classList.add('hidden');
+          successEl.classList.remove('hidden');
+          setTimeout(function() {
+            successEl.classList.add('hidden');
+            form.classList.remove('hidden');
+            form.reset();
+            submitBtn.disabled = true;
+            phoneError.classList.add('hidden');
+          }, 5000);
+        });
+      }
+    })();
+  </script>
+</body>
 </html>
